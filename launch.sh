@@ -45,3 +45,4 @@ else
   rm -r ../.telegram-cli/state #Prevent tg from crash
   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/betabot.lua -l 1 -E $@
 fi
+ 
