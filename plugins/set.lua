@@ -13,7 +13,7 @@ local function save_value(msg, name, value)
 end
 local function run(msg, matches)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط برای ادمینها مجاز است🔱"
   end
   local name = string.sub(matches[1], 1, 50)
   local value = string.sub(matches[2], 1, 1000)
@@ -25,7 +25,7 @@ end
 
 return {
   patterns = {
-   "^[!/]save ([^%s]+) (.+)$"
+   "^ذخیره ([^%s]+) (.+)$"
   }, 
   run = run 
 }
